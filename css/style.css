@@ -381,7 +381,7 @@ body.offcanvas {
 .colorlib-services,
 .colorlib-contact {
   padding-top: 4em;
-  padding-bottom: 2em;
+  /*padding-bottom: 2em;*/
   clear: both;
   width: 100%;
   display: block; }
@@ -395,7 +395,7 @@ body.offcanvas {
     .colorlib-services,
     .colorlib-contact {
       padding-top: 5em;
-      padding-bottom: 8em; } }
+      /*padding-bottom: 8em;*/ } }
 
 .author-img {
   background-size: cover;
@@ -469,6 +469,12 @@ body.offcanvas {
   -ms-box-shadow: none !important;
   -o-box-shadow: none !important;
   box-shadow: none !important; }
+  @media screen and (max-width: 768px) {
+    .panel-heading a {
+      
+      padding: 25px 48px 25px 15px;
+      line-height: 20px;
+      font-size: 14px; } }
 
 .panel {
   -webkit-box-shadow: none !important;
@@ -1301,14 +1307,24 @@ body.offcanvas {
 
 .colorlib-nav-toggle {
   cursor: pointer;
-  text-decoration: none; }
+  text-decoration: none; 
+  background-color: white;
+  width: 100%;
+  box-shadow: 0px 0px 56px -8px rgb(0 0 0 / 17%);
+
+
+}
   .colorlib-nav-toggle.active i::before, .colorlib-nav-toggle.active i::after {
     background: #000; }
   .colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
     background: #000; }
   .colorlib-nav-toggle:hover, .colorlib-nav-toggle:focus, .colorlib-nav-toggle:active {
+
     outline: none;
-    border-bottom: none !important; }
+    border-bottom: none !important; 
+   
+  
+  }
   .colorlib-nav-toggle i {
     position: relative;
     display: -moz-inline-stack;
